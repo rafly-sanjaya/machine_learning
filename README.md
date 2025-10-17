@@ -15,8 +15,8 @@ Dataset hasil olahan disimpan sebagai processed_kelulusan.csv.
 Membagi dataset menjadi train, validation, dan test set dengan rasio 70/15/15 menggunakan train_test_split secara stratified untuk menjaga distribusi label.
 
 ### 5. Model Development
-Baseline Model: Logistic Regression dengan pipeline preprocessing menggunakan SimpleImputer dan StandardScaler.
-Model Alternatif: Random Forest Classifier dengan parameter class_weight="balanced" untuk menangani ketidakseimbangan kelas.
+- Baseline Model: Logistic Regression dengan pipeline preprocessing menggunakan SimpleImputer dan StandardScaler.
+- Model Alternatif: Random Forest Classifier dengan parameter class_weight="balanced" untuk menangani ketidakseimbangan kelas.
 
 ### 6. Model Evaluation & Hyperparameter Tuning
 Melakukan validasi silang (StratifiedKFold) dan tuning hyperparameter menggunakan GridSearchCV.
