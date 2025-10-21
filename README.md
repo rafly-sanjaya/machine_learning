@@ -1,33 +1,55 @@
-# Machine Learning Pertemuan 4–6: Prediksi Kelulusan Mahasiswa
+# 🧠 Machine Learning: Prediksi Kelulusan Mahasiswa
 
-## Tahapan Proyek
-### 1. Data Collection & Cleaning
-Membaca dataset kelulusan_mahasiswa.csv menggunakan Pandas, menghapus duplikasi, menangani nilai kosong, dan melakukan visualisasi awal menggunakan Seaborn serta Matplotlib untuk mendeteksi outlier.
+**Nama:** Rafly Sanjaya  
+**Kelas:** 05TPLE015 - Machine Learning  
 
-### 2. Exploratory Data Analysis (EDA)
-Melakukan analisis deskriptif dan visualisasi hubungan antar variabel menggunakan histogram, scatter plot, dan heatmap korelasi untuk memahami pola yang memengaruhi kelulusan mahasiswa.
+---
 
-### 3. Feature Engineering
-Menambahkan fitur baru seperti Rasio_Absensi dan IPK_x_Study untuk meningkatkan performa model.
-Dataset hasil olahan disimpan sebagai processed_kelulusan.csv.
+## 🚀 Jalankan di Google Colab
 
-### 4. Dataset Splitting
-Membagi dataset menjadi train, validation, dan test set dengan rasio 70/15/15 menggunakan train_test_split secara stratified untuk menjaga distribusi label.
+| Pertemuan | Notebook | Link Colab |
+|------------|-----------|-------------|
+| 4 | Data Preparation | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rafly-sanjaya/machine_learning/blob/main/pertemuan4_data_preparation.ipynb) |
+| 5 | Modeling (Logistic Regression) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rafly-sanjaya/machine_learning/blob/main/pertemuan5_modeling.ipynb) |
+| 6 | Random Forest | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rafly-sanjaya/machine_learning/blob/main/pertemuan6_random_forest.ipynb) |
+| 7 | Artificial Neural Network (ANN) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rafly-sanjaya/machine_learning/blob/main/pertemuan7_ann.ipynb) |
 
-### 5. Model Development
-- Baseline Model: Logistic Regression dengan pipeline preprocessing menggunakan SimpleImputer dan StandardScaler.
-- Model Alternatif: Random Forest Classifier dengan parameter class_weight="balanced" untuk menangani ketidakseimbangan kelas.
+---
 
-### 6. Model Evaluation & Hyperparameter Tuning
-Melakukan validasi silang (StratifiedKFold) dan tuning hyperparameter menggunakan GridSearchCV.
-Evaluasi dilakukan dengan metrik F1-score (macro), classification report, dan ROC-AUC curve.
+## 📊 Deskripsi Proyek
+Proyek ini bertujuan untuk memprediksi **kelulusan mahasiswa** berdasarkan faktor akademik dan perilaku belajar menggunakan berbagai algoritma Machine Learning.
 
-### 7. Feature Importance
-Menampilkan peringkat kepentingan fitur (feature importance) dari model Random Forest untuk interpretasi hasil dan pemahaman faktor yang paling memengaruhi kelulusan.
+### 🔹 Tahapan Proyek
+1. **Data Preparation**  
+   Membersihkan dataset `kelulusan_mahasiswa.csv`, menghapus duplikasi, menangani missing value, dan melakukan visualisasi awal.
+2. **Modeling**  
+   Membangun model baseline (Logistic Regression) dan model alternatif (Random Forest, ANN).
+3. **Evaluation**  
+   Menggunakan metrik F1-score, precision, recall, ROC-AUC, confusion matrix, dan grafik ROC/PR.
+4. **Feature Importance & Interpretasi**  
+   Mengidentifikasi fitur yang paling berpengaruh terhadap prediksi kelulusan.
+5. **Deployment Preparation**  
+   Menyimpan model terbaik ke file `rf_model.pkl` dan menambahkan contoh prediksi.
 
-### 8. Model Deployment Preparation
-Menyimpan model terbaik ke file rf_model.pkl menggunakan joblib, serta menambahkan contoh prediksi lokal (inference) dengan input fiktif.
+---
 
-### 9. Hasil Akhir
-Model Random Forest memberikan performa terbaik dengan nilai F1-score dan ROC-AUC yang tinggi pada data validasi maupun data uji.
-Pipeline ini siap digunakan kembali untuk memprediksi kelulusan mahasiswa baru secara otomatis dengan hasil yang cepat dan konsisten.
+## 📁 File di Repositori
+- `kelulusan_mahasiswa.csv` → Dataset utama  
+- `pertemuan4_data_preparation.ipynb`  
+- `pertemuan5_modeling.ipynb`  
+- `pertemuan6_random_forest.ipynb`  
+- `pertemuan7_ann.ipynb`  
+- `rf_model.pkl` → Model hasil pelatihan  
+- `roc_curve.png`, `confusion_matrix.png` → Hasil evaluasi model  
+
+---
+
+## 🧾 Cara Menjalankan di Colab
+1. Klik tombol “Open in Colab” di atas.  
+2. Pastikan semua file (terutama `kelulusan_mahasiswa.csv`) ada di direktori yang sama.  
+3. Jalankan semua cell dari atas ke bawah.  
+
+---
+
+📌 **Catatan:**  
+Gunakan `random_state=42` agar hasil model tetap konsisten setiap dijalankan ulang.
