@@ -35,10 +35,10 @@ Proyek ini bertujuan untuk memprediksi **kelulusan mahasiswa** berdasarkan fakto
 
 ## 📁 File di Repositori
 - `kelulusan_mahasiswa.csv` → Dataset utama  
-- `pertemuan4_data_preparation.ipynb`  
-- `pertemuan5_modeling.ipynb`  
-- `pertemuan6_random_forest.ipynb`  
-- `pertemuan7_ann.ipynb`  
+- `pertemuan4_data_preparation.ipynb`: Tahapan pembersihan dan pembagian data.  
+- `pertemuan5_modeling.ipynb`: Model baseline Logistic Regression.
+- `pertemuan6_random_forest.ipynb`: Model Random Forest dan evaluasi.
+- `pertemuan7_ann.ipynb` : Model Artificial Neural Network (ANN).
 - `rf_model.pkl` → Model hasil pelatihan  
 - `roc_curve.png`, `confusion_matrix.png` → Hasil evaluasi model  
 
