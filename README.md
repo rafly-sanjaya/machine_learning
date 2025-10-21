@@ -30,9 +30,9 @@ Proyek ini bertujuan untuk memprediksi **kelulusan mahasiswa** berdasarkan fakto
    Mengidentifikasi fitur yang paling berpengaruh terhadap prediksi kelulusan.
 5. **Deployment Preparation**  
    Menyimpan model terbaik ke file `rf_model.pkl` dan menambahkan contoh prediksi.
-6. **9. Artificial Neural Network (Pertemuan 7)**  
-- Implementasi model **ANN** untuk klasifikasi kelulusan.  
-- Evaluasi performa model dan visualisasi loss serta akurasi pada data uji.
+6. **Artificial Neural Network (Pertemuan 7)**
+   - Implementasi model **ANN** untuk klasifikasi kelulusan.
+   - Evaluasi performa model dan visualisasi loss serta akurasi pada data uji.
 
 ---
 
