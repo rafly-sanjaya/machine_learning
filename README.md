@@ -50,9 +50,8 @@ Proyek ini bertujuan untuk memprediksi **kelulusan mahasiswa** berdasarkan fakto
 ---
 
 ## 🧾 Cara Menjalankan di Colab
-1. Klik tombol “Open in Colab” di atas.  
-2. Pastikan semua file (terutama `kelulusan_mahasiswa.csv`) ada di direktori yang sama.  
-3. Jalankan semua cell dari atas ke bawah.  
+1. Klik tombol “Open in Colab” di atas.
+2. Setelah notebook terbuka di Colab, klik **Runtime → Run all** untuk menjalankan semua sel. 
 
 ---
 
