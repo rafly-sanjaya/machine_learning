@@ -34,6 +34,7 @@ Proyek ini bertujuan untuk memprediksi **kelulusan mahasiswa** berdasarkan fakto
 ---
 
 ## 📁 File di Repositori
+- `Laporan` : Laporan pertemuan 4-7.
 - `processed_kelulusan.csv` : Dataset hasil preprocessing dan feature engineering.
 - `X_train.csv`, `X_val.csv`, `X_test.csv` : Data fitur hasil pembagian dataset.
 - `y_train.csv`, `y_val.csv`, `y_test.csv` : Label kelulusan hasil pembagian dataset.
